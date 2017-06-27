@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercice_03_série 2</title>
+
+    <meta charset="UTF-8">
+
+    <button name="valider" onclick="affiche()">Affiche le résultat</button>
+
+    <script type="text/javascript">
+        
+        
+         var myArray=[-2,1,4];
+        
+        function soustraction(x){
+            
+            var resultat= x-2;
+            if (x>=0){
+                alert("Negatif");
+                 }
+            else{
+                alert("")
+            }
+            return resultat;
+        }
+        
+        function affiche(){
+            
+             var affichage= resultat;//soustraction(myArray[0]);
+            
+            alert(affichage);
+            
+             var nombreEntier=parseInt(myArray.length);//il va prendre le nbre entier de ma length
+            
+            var valeur= nombreEntier-1;//ici il va changer le length en valeur index grace au moins 1
+            
+            var affichage2=soustraction(myArray[valeur]);//il va indiquer la valeur de l'index et la soustraire par rapport à ma fonction soustraction.
+            
+            alert(affichage2);
+            
+            
+            
+        }
+        
+        
+            
+        
+        
+        
+        
+    </script>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+
+</head>
+
+<body>
+    <canvas id="mon_canvas" width="500" height="500"> </canvas>
+
+    <script type="text/javascript">
+        var c = document.getElementById("mon_canvas");
+
+        var ctx = c.getContext("2d");
+//coque du bateau
+       ctx.beginPath(); // Début du chemin pour la coque du bateau
+        ctx.moveTo(50, 400);//Je trace point de depart du point 50 x vers 400 y
+        ctx.lineTo(20, 350);//point d arrivee
+        ctx.lineTo(300, 350);//un segment est rajouté
+        ctx.lineTo(270, 400);//un segment est rajouté
+        ctx.fillStyle = "red";//couleur du remplissage
+        ctx.strokeStyle = "black"; //Couleur du contour
+        ctx.lineWidth = 3; //Largeur de ligne
+        ctx.fill(); // Application du remplissage
+        ctx.stroke(); // Application du contour
+        
+//mat du bateau
+        
+        ctx.beginPath();//debut du chemin du mat
+        ctx.moveTo(200,100);//je trace le point de départ de mon mat
+        ctx.lineTo(200,350);//je trace le point d arrivee
+        
+        ctx.lineWidth=5;
+        
+        ctx.stroke(); // Application du contour
+        
+        //voile
+        
+      ctx.beginPath();
+        ctx.moveTo(195,110);//point de depart, j ai mis 195 car g compté les 5px de largeur de mon mat
+        ctx.lineTo(100,200);//premier point de depart
+        ctx.lineTo(195,200);//point d arrivee
+        ctx.fillStyle="blue";
+        ctx.fill();
+        
+
+
+    </script>
+</body>
+
+
+
+</html>

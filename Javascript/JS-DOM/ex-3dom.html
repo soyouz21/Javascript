@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercice 3</title>
+</head>
+
+<body>
+    <form>
+        <label for="nom">Votre nom  : </label>
+
+
+        <input type="text" name="nom" value="" id="nom" />
+
+    </form>
+    <script>
+        //je cree une fonction qui fait appel a l element id  pour faire des instructions
+        function faireunElement(id) {
+            //on cree une variable element pour faire appel au fichier html qui ira prendre l'element id.
+            var element = document.getElementById(id);
+            //ici je renomme une autre variable donnee qui est egal a la variable du fichier html getelementbyId ET en appelant sa valeur
+            var donnee = element.value; 
+            //ici c'est une alert avec les valeurs de la var donnee
+            alert(donnee); 
+        }
+        
+        //faire une fonction qui fera appel a l addEventListener avec comme instruction ce qui suit
+        function faireAddEventListener(id) {
+            //je renomme une nouvelle var qui fait appel au fichier html par son ID ici c'est "nom"
+            var element2 = document.getElementById(id);
+            
+            //je reprends la variable element2 et je fais appel a addEventListener suivi de "keyup",function(event)//ici event.target.idveut dire qu il va prendre l'id, de l elemnt danslequel tu as fait ton évènement.//{faireuneElement(event.tagert.id);}
+            element2.addEventListener("keyup", function(event) { 
+                    faireunElement(event.target.id);
+                });
+        }
+        //ici je demande à l ordi de faireunElement qui comporte les instructions de la function faireunElement.
+        faireAddEventListener("nom"); 
+
+    </script>
+
+
+</body>
+
+</html>

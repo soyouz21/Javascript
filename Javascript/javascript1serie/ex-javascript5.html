@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ex javascript">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Miriam">
+    
+    <link rel="stylesheet" href="script.js">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ex javascript</title>
+    
+      <script type="text/javascript">
+        
+          
+         //nombre1 indique la valeur entrée par l utilisateur et que promp va récuperer 
+         var nombre1=prompt("Veuillez introduire un nombre à virgule, utilisez des points pour les virgules svp");
+          //cette fonction nous permet de castrer les chiffres à virgule et de prendre que 
+          //les chiffres entier
+          var nombre2=prompt("Veuillez introduire un 2ème nombre à virgule, utilisez des points pour les virgules svp");
+          
+          nombre1=parseInt(nombre1);//parseint ne prend que le nombre entier 
+          
+          var résultat = (nombre1*nombre2);
+          
+          
+          alert("Voici le résultat!"+résultat);
+       
+          
+          
+    </script>
+    </head>
+    <body>
+        <form>
+            <label for="premier_nombre">Premier nombre : </label><input type="text" id="premier_nombre" name="premier_nombre"/><br/>
+            <label for="deuxieme_nombre">Deuxième nombre : </label><input type="text" id="deuxieme_nombre" name="deuxieme_nombre"/><br/>
+            <button  id="valider" onClick="test();" name ="valider">Valider</button>
+        </form>
+        
+    </body>
+</html>

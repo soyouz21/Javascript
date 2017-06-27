@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercice_6</title>
+    <meta charset="UTF-8">
+
+
+    <script type="text/javascript">
+        
+        function calculPerimetre(l, L) {//ici j appelle la fonction du calcul du périmètre//
+
+
+            alert(2*l+2*L+ " Résultat du périmètre");//alert qui calculera le périmètre c es pour cela qui n'est pas entre"", et affiche le résultat du périmètre
+
+
+
+        }
+        
+        function calculSurface(l,L){//ici j appelle la fonction qui calculera la surface
+            
+            alert(l*L+ " Résulat de la surface");//affiche le résultat de la surface
+        }
+
+        function calculer() {//fonction qui fait appel aux valeurs que l'internaute insere et va ensuite les calculer grace au onclick créé dans le button plus bas 
+
+            var longueur = document.getElementById("longueur_rectangle").value;//fait appel à la longueur que l'usager insere, grace au lieu du docgetelementbyid, qui sont dans le label (les inputs affichés à l'écran, on reprend leur id) 
+            var largeur = document.getElementById("largeur_rectangle").value;
+        
+            calculPerimetre(longueur, largeur);
+            calculSurface(longueur, largeur);
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <form>
+        <label for="surface rectangle">Entrez la longueur du rectangle</label><input type="text" id="longueur_rectangle" name="surface_rectangle" /><br/>
+
+        <label for="perimetre ractangle">Entrez la largeur du rectangle</label><input type="text" id="largeur_rectangle" name="perimetre_rectangle" /><br/>
+
+
+
+        <button id="valider" onClick="calculer()" name="valider">Valider</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercice_03_série 2</title>
+
+    <meta charset="UTF-8">
+
+    <button name="valider" onclick="affiche()">Affiche le résultat</button>
+
+    <script type="text/javascript">
+        
+        
+        
+        var myArray=[-2,1,4];
+        
+        function additionne(x){
+            
+            var resultat= x+2;
+            return resultat;
+            
+            
+            
+        }
+        
+        function affiche(){
+           
+            var affichage=additionne(myArray[0]);
+            
+            alert(affichage);
+            
+            var nombreEntier=parseInt(myArray.length);//il va prendre le nbre entier de ma length
+            var nombredevaleur= nombreEntier-1;//ici il va changer le length en valeur index
+            var affichage2=additionne(myArray[nombredevaleur]);//il va indiquer la valeur de l'index et l additionner par rapport à ma fonction additionne
+            
+            alert(affichage2);
+            
+        }
+        
+    </script>
+    
+    </head>
+</html>

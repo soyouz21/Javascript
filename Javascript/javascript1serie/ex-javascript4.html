@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ex javascript">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Miriam">
+    
+    <link rel="stylesheet" href="script.js">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ex javascript</title>
+    
+    
+      <script type="text/javascript">
+       
+         
+        //g appele "function" qui est un outil pour executer, ce qui ce trouve ente les accolades, je l'ai nommé test car dans mon code départ d'émilie il n y avait pas onclick=test dans le button( ce rajout vient de site openclassroom), ensuite tout ce qui est dans les accolades, sont toutes les variables avec chanque id qui font appel au document.getElemenById("id).value pour la valeur.//
+          
+          function test(){
+              
+            var nom= document.getElementById("nom").value;
+              var prenom= document.getElementById("prenom").value;
+              var ville= document.getElementById("ville").value;
+             alert(nom+" "+prenom+" "+ville);
+              
+              
+          }
+          
+       
+          
+          
+    //la variable tesinfos aura comme valeur la réponse du prompt
+         // var tesinfos= prompt("Nom"+" "+"Prénom"+" "+"Ville")
+         // alert(tesinfos);//affiche tes infos inscrites dans le prompt
+    </script>
+    </head>
+    <body>
+        
+         <form>
+            <label for="nom">Nom : </label><input type="text" name="nom" id="nom"/>
+            <label for="prenom">Prénom : </label><input type="text" name="prenom" id="prenom"/>
+            <label for="ville">Ville : </label><input type="text" name="ville" id="ville"/>
+            <button  name="valider" onClick="test();" id="valider">Valider</button>
+        </form>
+    </body>
+</html>

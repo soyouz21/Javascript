@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercice_07_série 2</title>
+
+    <meta charset="UTF-8">
+    
+    
+
+    <script type="text/javascript">
+        
+        
+        function faireChoix(){
+            
+            // je demande à l user d'inserer un ereponse a ma question faites un choix entre 1 2 3, et je stocke la reponse de l utilisateur dans  ma variable reponse que je vais reutiliser dans ma function
+            var reponse=parseInt(prompt("Faîtes un choix entre 1, 2 et 3"));
+            
+            
+            //var 1=Merci;
+            //var 2=Bonjour;
+            //var 3=Au revoir;
+            //var 4=Pardon, que voulez-vous??;
+            
+           switch (reponse){
+               case 1:
+                    document.write("Merci");
+                    
+                    alert("Merci");
+                    break;
+                    
+               case 2:
+                    document.write("Bonjour");
+                    
+                    alert("Bonjour");
+                    break;
+                    
+               case 3:
+                    document.write("Au revoir");
+                   
+                    alert("Au revoir");
+                     break;
+                    
+               default:
+                    document.write("Pardon, que voulez-vous?");
+                    
+                    alert("Pardon, que voulez-vous?");
+                    break;
+                    
+                         }
+            
+            
+        }
+    
+        
+        
+    </script>
+    </head>
+    <body>
+        <button name="valider" onclick="faireChoix()">Affiche le résultat</button>
+    
+    </body>
+</html>
+        

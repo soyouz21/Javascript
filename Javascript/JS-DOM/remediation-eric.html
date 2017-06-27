@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Filtrage</title>
+    
+</head>
+
+<body>
+<h1>Filtrage Anderlecht</h1>
+    <button id="tous">Tous</button>
+    <button id="femmes">Femmes</button>
+    <button id="hommes">Hommes</button>
+    <button id="formateurs">Formateurs</button>
+    <button id="apprenants">Apprenants</button>
+    <article class="andy femmes formateurs" >Emily</article>
+    <article class="andy hommes formateurs">Eric</article>
+    <article class="andy femmes apprenants" >Maria</article>
+    <article class="andy femmes apprenants">Nadia</article>
+    <article class="andy hommes apprenants">Gary</article>
+    <article class="andy hommes apprenants">Mike</article>
+    <article class="andy hommes apprenants">Gilles</article>
+    <article class="andy hommes apprenants">Pablo</article>
+    <article class="andy femmes apprenants">Hania</article>
+    <article class="andy hommes apprenants">Victor</article>
+    <article class="andy hommes apprenants">Claudy</article>
+    <article class="andy hommes apprenants">Thomas</article>
+    <article class="andy hommes apprenants">Claudy</article>
+    <article class="andy hommes apprenants">Japhet</article>
+    <article class="andy hommes apprenants">Adrien</article>
+    <article class="andy formateurs ">Eric2</article>
+    <article class="andy femmes apprenants">Miriam</article>
+    
+    
+    <script>
+        
+    function andyDisplay(classe,valeur){
+       var lesandy=document.getElementsByClassName(classe);
+         for(var i=0;i<lesandy.length;++i){
+            lesandy[i].style.display=valeur;
+          }     
+        }
+        document.getElementById('tous').onclick = function(){
+            andyDisplay('andy','block');
+        }
+        document.getElementById('femmes').onclick = function(){
+            andyDisplay('andy','none');
+            andyDisplay('femmes','block');
+        }
+        document.getElementById('hommes').onclick = function(){
+            andyDisplay('andy','none');
+            andyDisplay('hommes','block');
+        }
+        document.getElementById('formateurs').onclick = function(){
+            andyDisplay('andy','none');
+            andyDisplay('formateurs','block');
+        }
+        document.getElementById('apprenants').onclick = function(){
+            andyDisplay('andy','none');
+            andyDisplay('apprenants','block');
+        }
+    </script>
+    
+    
+    
+</body>
+
+</html>
